@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Weather App</title>
+    <link href="imges/logo.png" class="fav-icon" rel="icon" type="image/png" />
+
+    <!-- start icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search"
+    />
+    <!-- end icons -->
+
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <main class="main-container">
+      <header class="input-container">
+        <input class="city-input" placeholder="Search City" type="text" />
+        <button class="search-btn">
+          <span class="material-symbols-outlined"> search </span>
+        </button>
+      </header>
+      <section class="weather-info" style="display: none">
+        <div class="iocation-date-cont">
+          <div class="location">
+            <span class="fa-solid fa-location-dot"></span>
+            <h4 class="country-txt">Jakarta</h4>
+          </div>
+          <h5 class="current-date-txt reguler-txt">Wed, 07 Ang</h5>
+        </div>
+
+        <div class="weather-summery-cont">
+          <img
+            class="w-50 weather-summery-img"
+            src="imges/cloud.png"
+            alt="cloud"
+          />
+
+          <div class="weather-summery-info">
+            <h1 class="temp-txt">29°C</h1>
+            <h3 class="condition-txt reguler-txt">Clouds</h3>
+          </div>
+        </div>
+
+        <div class="weather-conditions-cont">
+          <div class="condition-item">
+            <span class="fa-solid fa-droplet"></span>
+            <div class="condition-info">
+              <h5 class="reguler-txt">Humidity</h5>
+              <h5 class="humidity-value-txt">55%</h5>
+            </div>
+          </div>
+
+          <div class="condition-item">
+            <span class="fa-solid fa-wind"></span>
+            <div class="condition-info">
+              <h5 class="reguler-txt">Wind Speed</h5>
+
+              <h5 class="wind-value-txt">2 M/s</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="forcast-items-cont">
+          <div class="forcast-item">
+            <h5 class="forcast-item-date reguler-txt">05 Aug</h5>
+
+            <img
+              src="imges/rain.png"
+              alt="rain"
+              class="w-50 forcast-item-img"
+            />
+            <h5 class="forcast-item-temp">29°C</h5>
+          </div>
+          <div class="forcast-item">
+            <h5 class="forcast-item-date reguler-txt">05 Aug</h5>
+
+            <img
+              src="imges/rain.png"
+              alt="rain"
+              class="w-50 forcast-item-img"
+            />
+            <h5 class="forcast-item-temp">29°C</h5>
+          </div>
+          <div class="forcast-item">
+            <h5 class="forcast-item-date reguler-txt">05 Aug</h5>
+
+            <img
+              src="imges/rain.png"
+              alt="rain"
+              class="w-50 forcast-item-img"
+            />
+            <h5 class="forcast-item-temp">29°C</h5>
+          </div>
+          <div class="forcast-item">
+            <h5 class="forcast-item-date reguler-txt">05 Aug</h5>
+
+            <img
+              src="imges/rain.png"
+              alt="rain"
+              class="w-50 forcast-item-img"
+            />
+            <h5 class="forcast-item-temp">29°C</h5>
+          </div>
+        </div>
+      </section>
+
+      <section class="search-city section-message">
+        <div class="message-img">
+          <img src="imges/404.png" class="w-100" alt="" />
+        </div>
+
+        <div>
+          <h1>Search City</h1>
+          <h4 class="reguler-txt">
+            Find out the weathr conditions of the city
+          </h4>
+        </div>
+      </section>
+
+      <section class="not-found section-message" style="display: none">
+        <div class="message-img">
+          <img
+            src="imges/404-page-not-found-illustration-download-in-svg-png-gif-file-formats--error-webpage-pages-pack-design-development-illustrations-3468592.webp"
+            class="w-100"
+            alt="erro-404"
+          />
+        </div>
+
+        <div>
+          <h1>Search City</h1>
+          <h4 class="reguler-txt">
+            Find out the weathr conditions of the city
+          </h4>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #ffff;
+  font-weight: 600;
+
+  font-size: 10px;
+}
+
+span {
+  font-size: 22px;
+}
+
+body {
+  background: url(../imges/freepik__candid-image-photography-natural-textures-highly-r__77445.jpeg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: rgb(0, 0, 0, 0.16);
+  backdrop-filter: blur(14px);
+}
+
+.reguler-txt {
+  font-weight: 300;
+}
+
+.main-container {
+  width: 300px;
+  height: 496px;
+  z-index: 1;
+  background: linear-gradient(
+    to top,
+    rgb(0, 0, 0, 0.15),
+    rgb(255, 255, 255, 0.15)
+  );
+  border-radius: 12px;
+  backdrop-filter: blur(100px);
+  padding: 20px;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.city-input {
+  width: 100%;
+  padding: 10px 16px;
+  border-radius: 99px;
+  border: 3px solid transparent;
+  background: rgb(0, 0, 0, 0.15);
+  outline: none;
+  font-weight: 400;
+  transition: 0.25s border;
+  padding-right: 45px;
+}
+
+.city-input:hover {
+  border: 3px solid rgb(0, 0, 0, 0.15);
+}
+.city-input::placeholder {
+  color: rgb(255, 255, 255, 0.75);
+}
+
+.search-btn {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  display: flex;
+  border: none;
+  cursor: pointer;
+}
+
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.iocation-date-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.weather-summery-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weather-summery-info {
+  text-align: end;
+}
+
+.weather-conditions-cont {
+  display: flex;
+  justify-content: space-between;
+}
+
+.condition-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+
+
+.forcast-items-cont {
+  display: flex;
+  gap: 20px;
+  overflow: scroll;
+  padding-bottom: 12px;
+  
+}
+
+.forcast-items-cont::-webkit-scrollbar {
+  height: 8px;
+  width: 0px;
+}
+.forcast-items-cont::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0, 0.1);
+  border-radius: 99px;
+}
+
+.forcast-items-cont::-webkit-scrollbar-thumb {
+  background: rgb(0, 0, 0, 0.15);
+  border-radius: 99px;
+}
+
+.forcast-item {
+  min-width: 70px;
+  background: rgb(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px;
+  align-items: center;
+  border-radius: 12px;
+  transition: 0.3s background;
+}
+
+.forcast-item:hover {
+  background: rgb(255, 255, 255, 0.15);
+}
+.section-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  margin-top: 25%;
+}
+
+.message-img {
+  height: 200px;
+  width: fit-content;
+}
